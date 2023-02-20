@@ -8,63 +8,77 @@
     <title>Contact</title>
 </head>
 <body class="flex flex-col h-screen">
-    <header>
-        <div class="bg-black mx-auto">
+    <header class="relative">
+        <div class="bg-black">
             <div class="container">
-                <nav class="flex justify-between items-center py-6 border-4 border-black">
+                <nav class="flex justify-between items-center py-6 mx-auto">
                     <a class="text-light font-bold">Lorem Ipsum</a>
-                    <ul class="flex gap-12">
+                    <ul class="flex gap-12 text-sm lg:gap-8 lg:text-xs md:hidden">
                         <li><a href="home.html" class="text-light text-base hover:text-yellow transition-colors">Home</a></li>
                         <li><a href="blog.html" class="text-light text-base hover:text-yellow transition-colors">Blog</a></li>
                         <li><a href="about.html" class="text-light text-base hover:text-yellow transition-colors">About Us</a></li>
                         <li><a href="contact.html" class="text-light text-base hover:text-yellow transition-colors">Contact us</a></li>
                         <li><a href="" class="text-black text-base hover:text-yellow transition-colors bg-light px-5 py-2 rounded-lg">Subscribe</a></li>
                     </ul>
+
+                    <ul id="menu" class="hidden absolute left-0 right-0 top-16 bg-black flex-col items-center">
+                        <li><a href="blog.html" class="text-light text-base py-10">Blog</a></li>
+                        <li><a href="home.html" class="text-light text-base py-10">Home</a></li>
+                        <li><a href="about.html" class="text-light text-base py-10">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-base py-10">Contact us</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+
+                    <button class="burger hidden md:block">
+                        <span class="burger-line top-line"></span>
+                        <span class="burger-line mid-line"></span>
+                        <span class="burger-line bottom-line"></span>
+                    </button>
                 </nav>
             </div>
         </div>
     </header>
 
-    <div class="container grid justify-center">
-        <div class="w-[768px] h-[176px] text-center mt-32">
+    <div class="container flex flex-col justify-center">
+        <div class="h-[176px] text-center mt-32 mx-auto">
             <p class="font-black text-base leading-5 tracking-widest text-black uppercase">Contact us</p>
-            <h1 class="pt-3 font-bold text-5xl leading-[64px] text-black">Let’s Start a Conversation</h1>
-            <p class="pt-6 font-normal text-base leading-7 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            <h1 class="pt-3 font-bold text-5xl leading-[64px] text-black md:text-3xl">Let’s Start a Conversation</h1>
+            <p class="pt-6 font-normal text-base leading-7 text-gray-700 md:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
         </div>
 
-        <div class="flex flex-row bg-purple w-[768px] h-[240px] mt-16 justify-center gap-8">
-            <div class="py-12 w-[294px]">
+        <div class="flex flex-row bg-purple px-5 mt-16 justify-center gap-8 mx-auto md:flex-col md:mt-4">
+            <div class="py-12 w-[294px] md:py-2">
                 <p class="pb-4 border-b-[1px] border-light-600 font-normal text-base leading-5 text-light">Working hours</p>
                 <h1 class="pt-4 font-bold text-xl leading-8 text-light capitalize">Monday To Friday</h1>
                 <h1 class="font-bold text-xl leading-8 text-light">9:00 AM to 8:00 PM </h1>   
                 <p class="font-normal text-base leading-7 text-light opacity-60">Our Support Team is available 24/7</p>
             </div>
-            <div class="py-12 w-[294px]">
+            <div class="py-12 w-[294px] md:py-2">
                 <p class="pb-4 border-b-[1px] border-light-600 font-normal text-base leading-5 text-light">Contact Us</p>
                 <h1 class="pt-4 font-bold text-xl leading-8 text-light capitalize">020 7993 2905</h1>
                 <p class="font-normal text-base leading-7 text-light opacity-60">hello@finsweet.com</p>
             </div>
         </div>
 
-        <form action="" class="flex flex-col justify-center gap-3 py-20">
+        <form action="" class="flex flex-col gap-3 py-20 px-10 mx-auto md:py-4">
             <div>
-                <input type="text" placeholder="Full Name" class="px-6 w-[768px] h-[76px] rounded-lg border-[1px] border-gray-300">
+                <input type="text" placeholder="Full Name" class="px-6 w-[768px] h-[76px] rounded-lg border-[1px] md:w-[350px] border-gray-300">
             </div>
             <div>
-                <input type="email" placeholder="Your email" class="px-6 w-[768px] h-[76px] rounded-lg border-[1px] border-gray-300">
+                <input type="email" placeholder="Your email" class="px-6 w-[768px] h-[76px] rounded-lg border-[1px] md:w-[350px] border-gray-300">
             </div>
             <div>
-                <input type="textarea" placeholder="Message" class="px-6 w-[768px] h-[76px] rounded-lg border-[1px] border-gray-300">
+                <input type="textarea" placeholder="Message" class="px-6 w-[768px] h-[76px] rounded-lg border-[1px] md:w-[350px] border-gray-300">
             </div>
             <div>
-                <button class="w-[768px] h-[76px] rounded-lg border-[1px] border-yellow bg-yellow font-bold text-2xl leading-8 text-black">Send Message</button>
+                <button class="w-[768px] h-[76px] rounded-lg border-[1px] md:w-[350px] border-yellow bg-yellow font-bold text-2xl leading-8 text-black">Send Message</button>
             </div>
         </form>
     </div>
 
-    <footer class="bg-black w-full px-24 sticky top-[100vh]">
+    <footer class="bg-black">
         <div class="container">
-            <div class="flex justify-between py-14">
+            <div class="flex justify-between py-14 md:hidden">
                 <p class="text-light font-bold text-2xl">Lorem Ipsum</p>
                 <ul class="flex gap-5">
                     <li><a href="home.html" class="text-light text-lg">Home</a></li>
@@ -73,9 +87,9 @@
                     <li><a href="contact.html" class="text-light text-lg">Contact us</a></li>
                 </ul>
             </div>
-            <div class="py-3 flex gap-3 justify-between">
-                <h1 class="w-[562px] font-bold text-3xl text-light">Subscribe to our news letter to get latest updates and news</h1>
-                <input type="text" class="w-[323px] h-[56px] px-2 bg-gray-600" placeholder="  Enter your email">
+            <div class="py-3 flex gap-3 sm:flex-col md:flex-col">
+                <h1 class="font-bold text-2xl text-light md:text-sm md:text-center sm:text-center">Subscribe to our news letter to get latest updates and news</h1>
+                <input type="text" class="h-[56px] px-2 bg-gray-600" placeholder="  Enter your email">
                 <button class="px-12 bg-yellow text-black h-[56px]">Subscribe</button>
             </div>
             <div class="flex justify-between py-10">
@@ -97,6 +111,6 @@
             </div>
         </div>
     </footer>
-    
+    <script src="./js/main.js"></script>
 </body>
 </html>

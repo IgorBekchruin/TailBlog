@@ -8,38 +8,53 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
-        <div class="bg-black mx-auto">
-            <div class="container md:justify-center">
-                <nav class="flex justify-between items-center py-6 border-4 border-black lg:px-20 md:px-10 md:justify-center">
+    <header class="relative">
+        <div class="bg-black">
+            <div class="container">
+                <nav class="flex justify-between items-center py-6 mx-auto">
                     <a class="text-light font-bold">Lorem Ipsum</a>
-                    <ul class="flex gap-12 lg:gap-8 md:gap-4 text-sm">
+                    <ul class="flex gap-12 text-sm lg:gap-8 lg:text-xs md:hidden">
                         <li><a href="home.html" class="text-light text-base hover:text-yellow transition-colors">Home</a></li>
                         <li><a href="blog.html" class="text-light text-base hover:text-yellow transition-colors">Blog</a></li>
                         <li><a href="about.html" class="text-light text-base hover:text-yellow transition-colors">About Us</a></li>
                         <li><a href="contact.html" class="text-light text-base hover:text-yellow transition-colors">Contact us</a></li>
                         <li><a href="" class="text-black text-base hover:text-yellow transition-colors bg-light px-5 py-2 rounded-lg">Subscribe</a></li>
                     </ul>
+
+                    <ul id="menu" class="hidden absolute left-0 right-0 top-20 bg-black flex-col items-center gap-y-4">
+                        <li><a href="blog.html" class="text-light text-base  hover:text-yellow transition-colors">Blog</a></li>
+                        <li><a href="home.html" class="text-light text-base  hover:text-yellow transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-light text-base  hover:text-yellow transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-base  hover:text-yellow transition-colors">Contact us</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+
+                    <button class="burger hidden md:block">
+                        <span class="burger-line top-line"></span>
+                        <span class="burger-line mid-line"></span>
+                        <span class="burger-line bottom-line"></span>
+                    </button>
                 </nav>
             </div>
-            <div class="h-[650px] bg-[url('/img/cover.jpg')] justify-center">
+            <div class="h-[650px] bg-[url('/img/cover.jpg')] justify-center md:h-[500px]">
                 <div class="container lg:px-10 md:px-10">
-                    <div class="w-[804px] h-[400px] pt-32">
-                        <p class="text-light text-base uppercase tracking-widest">Posted on startup</p>
-                        <h1 class="pt-6 text-light text-[56px] leading-[64px] font-['Sans']">Step-by-step guide to choosing great font pairs</h1>
-                        <p class="pt-6 text-light text-base">By <span class="text-yellow">John Doe</span> |  May 23, 2022</p>
-                        <h4 class="mb-16 pt-4 text-light md:text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</h4>
-                        <a href="blogpost.html" class="font-semibold text-lg items-center text-black bg-yellow px-5 py-4">Read More ></a>
+                    <div class=" h-[400px] pt-32">
+                        <p class="text-light text-base uppercase tracking-widest sm:text-sm">Posted on startup</p>
+                        <h1 class="pt-6 text-light text-[56px] leading-[64px] font-['Sans'] md:text-3xl sm:text-xl">Step-by-step guide to choosing great font pairs</h1>
+                        <p class="pt-6 text-light text-base sm:text-xs">By <span class="text-yellow">John Doe</span> |  May 23, 2022</p>
+                        <h4 class="mb-16 pt-4 text-light md:text-sm sm:text-xs">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</h4>
+                        <a href="blogpost.html" class="font-semibold text-lg items-center text-black bg-yellow px-5 py-4 sm:text-sm">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
     <main>
         <div class="container">
-            <div class="grid grid-flow-col gap-2 pt-28 justify-center mx-auto md:flex-row">
-                <div class="w-[640px] lg:w-[500px]">
-                    <h2 class=" mb-8 text-black text-4xl font-semibold">Featured Post</h2>
+            <div class="flex flex-row gap-2 pt-28 justify-center mx-auto md:flex-col md:pt-10">
+                <div>
+                    <h2 class="mb-8 text-black text-4xl font-semibold md:w-2/3">Featured Post</h2>
                     <div class="p-8 border-[1px] border-lightgrey">
                         <img src="./img/post.png" alt="">
                         <p class="pt-8 text-darkgrey text-sm">By <span class="text-purple">John Doe</span>   l   May 23, 2022</p>
@@ -48,7 +63,7 @@
                         <a href="blogpost.html" class="font-semibold text-lg items-center text-black bg-yellow px-5 py-4">Read More</a>
                     </div>
                 </div>
-                <div class="w-[420px] lg:w-300[px]">
+                <div class="">
                     <h2 class="ml-8 mb-8 text-black text-4xl font-semibold">All Posts</h2>
                     <div class="pl-4">
                         <div class="py-6 pl-8">
@@ -71,31 +86,31 @@
                 </div>
             </div>
 
-            <div class="grid grid-flow-col bg-lavender justify-center mt-[70px]">
-                <div class="w-[515px] py-24">
+            <div class="flex flex-row bg-lavender justify-center mt-[70px] md:flex-col px-6 gap-8">
+                <div class="py-24 md:py-3 basis-1/2">
                     <p class="text-black text-base uppercase leading-3 font-semibold">ABOUT US</p>
-                    <h1 class="pt-6 text-black text-4xl font-semibold">We are a community of content writers who share their learnings</h1>
+                    <h1 class="pt-6 text-black text-2xl font-semibold">We are a community of content writers who share their learnings</h1>
                     <p class="pt-4 mb-4 text-mdgrey text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <a href="blogpost.html" class="pt-4 text-purple font-bold text-lg">Read More ></a>
                 </div>
-                <div class="w-[515px] pl-10 pt-24">
+                <div class="pt-24 md:py-3 basis-1/2">
                     <p class="text-black text-base uppercase leading-3 font-semibold">our mission</p>
                     <h1 class="pt-8 text-black font-bold text-2xl">Creating valuable content for creatives all around the world</h1>
                     <p class="pt-4 text-mdgrey text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
 
-            <div class="grid grid-row justify-center py-28 mx-auto">
+            <div class="py-28 mx-auto md:py-10">
                 <h1 class="text-black fon-bold text-4xl text-center">Choose A Catagory</h1>
-                <div class="flex flex-row gap-4 pt-12 justify-center">
+                <div class="flex flex-row gap-4 pt-12 justify-center md:flex-wrap">
                     <div class="border-[1px] border-lightgrey w-[260px] h-[230px]">
                         <div class="ml-8 my-6">
                             <svg class="h-20 w-20 text-yellow"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                             </svg>
                         </div>
-                        <h2 class="pl-8 text-black font-bold text-3xl">Business</h2>
-                        <p class="p-6 pt-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        <h2 class="pl-8 text-black font-bold text-3xl lg:text-xl">Business</h2>
+                        <p class="p-6 lg:text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                     <div class="border-[1px] border-lightgrey w-[260px] h-[230px]">
                         <div class="ml-8 my-6">
@@ -103,8 +118,8 @@
                                 <path d="M15 12h5a2 2 0 0 1 0 4h-15l-3 -6h3l2 2h3l-2 -7h3z" transform="rotate(-15 12 12) translate(0 -1)" />  <line x1="3" y1="21" x2="21" y2="21" />
                             </svg>
                         </div>
-                        <h2 class="pl-8 text-black font-bold text-3xl">Startup</h2>
-                        <p class="p-6 pt-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        <h2 class="pl-8 text-black font-bold text-3xl lg:text-xl">Startup</h2>
+                        <p class="p-6 lg:text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                     <div class="border-[1px] border-lightgrey w-[260px] h-[230px]">
                         <div class="ml-8 my-6">
@@ -112,8 +127,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                         </div>
-                        <h2 class="pl-8 text-black font-bold text-3xl">Economy</h2>
-                        <p class="p-6 pt-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        <h2 class="pl-8 text-black font-bold text-3xl lg:text-xl">Economy</h2>
+                        <p class="p-6 lg:text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                     <div class="border-[1px] border-lightgrey w-[260px] h-[230px]">
                         <div class="ml-8 my-6">
@@ -121,17 +136,17 @@
                                 <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="3" y1="10" x2="3" y2="16" />  <line x1="21" y1="10" x2="21" y2="16" />  <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />  <line x1="8" y1="3" x2="9" y2="5" />  <line x1="16" y1="3" x2="15" y2="5" />  <line x1="9" y1="18" x2="9" y2="21" />  <line x1="15" y1="18" x2="15" y2="21" />
                             </svg>
                         </div>
-                        <h2 class="pl-8 text-black font-bold text-3xl">Technology</h2>
-                        <p class="p-6 pt-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        <h2 class="pl-8 text-black font-bold text-3xl lg:text-xl">Technology</h2>
+                        <p class="p-6 lg:text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                 </div>
             </div>
 
             <div class="container">
-                <div class="py-28 h-[705px] w-full bg-[url('/img/close.png')] grid justify-items-end">
-                    <div class=" bg-light w-[706px] h-[600px]">
+                <div class="py-28 h-[705px] bg-[url('/img/close.png')] grid justify-items-end md:justify-center">
+                    <div class=" bg-light w-[706px] md:w-full">
                         <p class="text-[#232536] text-base font-semibold leading-3 uppercase pl-20 pt-20">Why we started </p>
-                        <h1 class="pl-20 pt-6 text-black font-bold text-5xl">It started out as a simple idea and evolved into our passion</h1>
+                        <h1 class="pl-20 pt-6 text-black font-bold text-5xl md:text-2xl">It started out as a simple idea and evolved into our passion</h1>
                         <p class="pl-20 pt-4 mb-12 text-mdgrey text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
                         <a href="" class="text-black text-lg font-bold px-12 py-4 bg-yellow ml-20">Discover our story ></a>
                     </div>
@@ -140,7 +155,7 @@
 
             <div class="py-24">
                 <h1 class="text-center text-black text-4xl font-bold">List of Authors</h1>
-                <div class="flex flex-row justify-center pt-12 gap-5">
+                <div class="flex flex-row justify-center pt-12 gap-5 md:flex-wrap">
                     <div class="h-[324px] w-[296px] bg-lightgrey">
                         <img src="./img/man.png" alt="" class="mx-auto pt-10">
                         <h2 class="pt-5 text-center font-bold text-black text-3xl">Floyd Miles</h2>
@@ -191,9 +206,9 @@
         </div>
     </main>
     
-    <footer class="bg-black w-full px-24">
+    <footer class="bg-black">
         <div class="container">
-            <div class="flex justify-between py-14">
+            <div class="flex justify-between py-14 md:hidden">
                 <p class="text-light font-bold text-2xl">Lorem Ipsum</p>
                 <ul class="flex gap-5">
                     <li><a href="home.html" class="text-light text-lg">Home</a></li>
@@ -202,9 +217,9 @@
                     <li><a href="contact.html" class="text-light text-lg">Contact us</a></li>
                 </ul>
             </div>
-            <div class="py-3 flex gap-3 justify-between">
-                <h1 class="w-[562px] font-bold text-3xl text-light">Subscribe to our news letter to get latest updates and news</h1>
-                <input type="text" class="w-[323px] h-[56px] px-2 bg-gray-600" placeholder="  Enter your email">
+            <div class="py-3 flex gap-3 sm:flex-col md:flex-col">
+                <h1 class="font-bold text-2xl text-light md:text-sm md:text-center sm:text-center">Subscribe to our news letter to get latest updates and news</h1>
+                <input type="text" class="h-[56px] px-2 bg-gray-600" placeholder="  Enter your email">
                 <button class="px-12 bg-yellow text-black h-[56px]">Subscribe</button>
             </div>
             <div class="flex justify-between py-10">
@@ -226,5 +241,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

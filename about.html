@@ -8,18 +8,32 @@
     <title>AboutUs</title>
 </head>
 <body class="flex flex-col h-screen justify-between">
-    <header>
-        <div class="bg-black mx-auto">
+    <header class="relative">
+        <div class="bg-black">
             <div class="container">
-                <nav class="flex justify-between items-center py-6 border-4 border-black">
+                <nav class="flex justify-between items-center py-6 mx-auto">
                     <a class="text-light font-bold">Lorem Ipsum</a>
-                    <ul class="flex gap-12">
+                    <ul class="flex gap-12 text-sm lg:gap-8 lg:text-xs md:hidden">
                         <li><a href="home.html" class="text-light text-base hover:text-yellow transition-colors">Home</a></li>
                         <li><a href="blog.html" class="text-light text-base hover:text-yellow transition-colors">Blog</a></li>
                         <li><a href="about.html" class="text-light text-base hover:text-yellow transition-colors">About Us</a></li>
                         <li><a href="contact.html" class="text-light text-base hover:text-yellow transition-colors">Contact us</a></li>
                         <li><a href="" class="text-black text-base hover:text-yellow transition-colors bg-light px-5 py-2 rounded-lg">Subscribe</a></li>
                     </ul>
+
+                    <ul id="menu" class="hidden absolute left-0 right-0 top-20 bg-black flex-col items-center gap-y-4">
+                        <li><a href="blog.html" class="text-light text-base  hover:text-yellow transition-colors">Blog</a></li>
+                        <li><a href="home.html" class="text-light text-base  hover:text-yellow transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-light text-base  hover:text-yellow transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-base  hover:text-yellow transition-colors">Contact us</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+
+                    <button class="burger hidden md:block">
+                        <span class="burger-line top-line"></span>
+                        <span class="burger-line mid-line"></span>
+                        <span class="burger-line bottom-line"></span>
+                    </button>
                 </nav>
             </div>
         </div>
@@ -27,10 +41,10 @@
 
     <main>
         <div class="container">
-            <div class="flex flex-row mx-auto justify-between px-10 py-20 gap-16">
+            <div class="flex flex-row mx-auto justify-between px-10 py-20 gap-16 md:flex-col">
                 <div class="basis-1/2">
                     <p class="font-medium text-base leading-5 tracking-widest text-black">ABOUT US</p>
-                    <h1 class="py-4 font-bold text-5xl leading-[64px] -tracking-wider text-black">We are a team of content writers who share their learnings</h1>
+                    <h1 class="py-4 font-bold text-5xl leading-[64px] -tracking-wider text-black lg:text-3xl">We are a team of content writers who share their learnings</h1>
                 </div>
                 <div class="basis-1/2">
                     <p class="font-normal text-base leading-7 text-mdgrey py-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -38,7 +52,7 @@
             </div>
 
             <div class="bg-[url('/img/aboutphoto.png')] h-[450px] justify-end">
-                <div class="bg-yellow flex flex-row gap-16 w-[630px] px-12 py-8">
+                <div class="bg-yellow flex flex-row gap-16  px-12 py-8">
                     <div>
                         <h2 class="font-bold text-5xl leading-[64px] tracking-tight text-black">12+</h2>
                         <p class="font-normal text-base leading-4 text-black">Blogs Published</p>
@@ -54,43 +68,43 @@
                 </div>
             </div>
 
-            <div class="bg-lavender flex flex-row gap-4 px-5 py-16">
-                <div class="pt-16">
+            <div class="bg-lavender flex flex-row gap-4 px-5 py-16 md:flex-col">
+                <div class="pt-16 basis-1/2">
                     <p class="font-semibold text-base leading-5 tracking-widest text-black uppercase">Our mision</p>
-                    <h1 class="pt-6 w-[480px] font-bold text-3xl leading-10 tracking-tight text-black">Creating valuable content for creatives all around the world</h1>
-                    <p class="pt-4 w-[515px] font-normal text-base leading-7 text-mdgrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+                    <h1 class="pt-6 font-bold text-3xl leading-10 tracking-tight text-black">Creating valuable content for creatives all around the world</h1>
+                    <p class="pt-4 font-normal text-base leading-7 text-mdgrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
                 </div>
-                <div class="pt-16">
+                <div class="pt-16 basis-1/2">
                     <p class="font-semibold text-base leading-5 tracking-widest text-black uppercase">Our Vision</p>
-                    <h1 class="pt-6 w-[480px] font-bold text-3xl leading-10 tracking-tight text-black">A platform that empowers individuals to improve</h1>
-                    <p class="pt-4 w-[515px] font-normal text-base leading-7 text-mdgrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+                    <h1 class="pt-6 font-bold text-3xl leading-10 tracking-tight text-black">A platform that empowers individuals to improve</h1>
+                    <p class="pt-4 font-normal text-base leading-7 text-mdgrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
                 </div>
             </div>
 
-            <div class="flex flex-row justify-between items-center pt-28 gap-5">
-                <div class="w-[500px] h-[315px]">
-                    <h1 class="font-bold text-4xl leading-[48px] tracking-tight text-black">Our team of creatives</h1>
-                    <h3 class="pt-4 font-bold text-2xl leading-8 text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
-                    <p class="pt-4 font-normal text-base leading-7 text-bl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+            <div class="flex flex-row justify-between items-center pt-10 gap-5 md:flex-col">
+                <div class="w-[500px] md:w-full">
+                    <h1 class="font-bold text-4xl leading-[48px] tracking-tight text-blac lg:text-2xl">Our team of creatives</h1>
+                    <h3 class="pt-4 font-bold text-2xl leading-8 text-black lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
+                    <p class="pt-4 font-normal text-base leading-7 text-black lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
                 </div>
-                <div class="w-[580px] h-[480px] grid place-items-end">
+                <div class="w-[580px] grid place-items-end md:w-full">
                     <img src="./img/ground.png" alt="">
                 </div>
             </div>
-            <div class="flex flex-row justify-between items-center pt-28 gap-5">
-                <div class="w-[580px] h-[480px]">
+            <div class="flex flex-row justify-between items-center pt-10 gap-5 md:flex-col">
+                <div class="w-[580px] md:w-full">
                     <img src="./img/three-persons.png" alt="">
                 </div>
-                <div class="w-[500px] h-[315px]">
-                    <h1 class="font-bold text-4xl leading-[48px] tracking-tight text-black">Why we started this Blog</h1>
-                    <h3 class="pt-4 font-bold text-2xl leading-8 text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
-                    <p class="pt-4 font-normal text-base leading-7 text-bl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                <div class="w-[500px] md:w-full">
+                    <h1 class="font-bold text-4xl leading-[48px] tracking-tight text-black lg:text-2xl">Why we started this Blog</h1>
+                    <h3 class="pt-4 font-bold text-2xl leading-8 text-black lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
+                    <p class="pt-4 font-normal text-base leading-7 text-black lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
                 </div>
             </div>
 
             <div class="py-24">
                 <h1 class="text-center text-black text-4xl font-bold">List of Authors</h1>
-                <div class="flex flex-row justify-center pt-12 gap-5">
+                <div class="flex flex-row justify-center pt-12 gap-5 md:flex-wrap">
                     <div class="h-[324px] w-[296px] bg-lightgrey">
                         <img src="./img/man.png" alt="" class="mx-auto pt-10">
                         <h2 class="pt-5 text-center font-bold text-black text-3xl">Floyd Miles</h2>
@@ -142,9 +156,9 @@
         </div>
     </main>
 
-    <footer class="bg-black w-full px-24">
+    <footer class="bg-black">
         <div class="container">
-            <div class="flex justify-between py-14">
+            <div class="flex justify-between py-14 md:hidden">
                 <p class="text-light font-bold text-2xl">Lorem Ipsum</p>
                 <ul class="flex gap-5">
                     <li><a href="home.html" class="text-light text-lg">Home</a></li>
@@ -153,9 +167,9 @@
                     <li><a href="contact.html" class="text-light text-lg">Contact us</a></li>
                 </ul>
             </div>
-            <div class="py-3 flex gap-3 justify-between">
-                <h1 class="w-[562px] font-bold text-3xl text-light">Subscribe to our news letter to get latest updates and news</h1>
-                <input type="text" class="w-[323px] h-[56px] px-2 bg-gray-600" placeholder="  Enter your email">
+            <div class="py-3 flex gap-3 sm:flex-col md:flex-col">
+                <h1 class="font-bold text-2xl text-light md:text-sm md:text-center sm:text-center">Subscribe to our news letter to get latest updates and news</h1>
+                <input type="text" class="h-[56px] px-2 bg-gray-600" placeholder="  Enter your email">
                 <button class="px-12 bg-yellow text-black h-[56px]">Subscribe</button>
             </div>
             <div class="flex justify-between py-10">
@@ -176,6 +190,6 @@
                 </ul>
             </div>
         </div>
-    </footer> 
+    </footer>
 </body>
 </html>
