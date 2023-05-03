@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
-    <title>AboutUs</title>
+    <link href="/css/main.css" rel="stylesheet">
+    <title>Home</title>
 </head>
-<body class="flex flex-col h-screen justify-between">
+<body>
     <header class="relative">
         <div class="bg-black">
             <div class="container">
@@ -36,69 +36,120 @@
                     </button>
                 </nav>
             </div>
+            <div class="h-[650px] bg-[url('/img/cover.jpg')] justify-center md:h-[500px]">
+                <div class="container lg:px-10 md:px-10">
+                    <div class=" h-[400px] pt-32">
+                        <p class="text-light text-base uppercase tracking-widest sm:text-sm">Posted on startup</p>
+                        <h1 class="pt-6 text-light text-[56px] leading-[64px] font-['Sans'] md:text-3xl sm:text-xl">Step-by-step guide to choosing great font pairs</h1>
+                        <p class="pt-6 text-light text-base sm:text-xs">By <span class="text-yellow">John Doe</span> |  May 23, 2022</p>
+                        <h4 class="mb-16 pt-4 text-light md:text-sm sm:text-xs">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</h4>
+                        <a href="blogpost.html" class="font-semibold text-lg items-center text-black bg-yellow px-5 py-4 sm:text-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
         <div class="container">
-            <div class="flex flex-row mx-auto justify-between px-10 py-20 gap-16 md:flex-col">
-                <div class="basis-1/2">
-                    <p class="font-medium text-base leading-5 tracking-widest text-black">ABOUT US</p>
-                    <h1 class="py-4 font-bold text-5xl leading-[64px] -tracking-wider text-black lg:text-3xl">We are a team of content writers who share their learnings</h1>
+            <div class="flex flex-row gap-2 pt-28 justify-center mx-auto md:flex-col md:pt-10">
+                <div>
+                    <h2 class="mb-8 text-black text-4xl font-semibold md:w-2/3">Featured Post</h2>
+                    <div class="p-8 border-[1px] border-lightgrey">
+                        <img src="./img/post.png" alt="">
+                        <p class="pt-8 text-darkgrey text-sm">By <span class="text-purple">John Doe</span>   l   May 23, 2022</p>
+                        <h2 class="pt-4 text-black text-2xl font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
+                        <p class="pt-4 mb-8 text-base text-mdgrey">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        <a href="blogpost.html" class="font-semibold text-lg items-center text-black bg-yellow px-5 py-4">Read More</a>
+                    </div>
                 </div>
-                <div class="basis-1/2">
-                    <p class="font-normal text-base leading-7 text-mdgrey py-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="">
+                    <h2 class="ml-8 mb-8 text-black text-4xl font-semibold">All Posts</h2>
+                    <div class="pl-4">
+                        <div class="py-6 pl-8">
+                            <p class="text-darkgrey text-sm">By <span class="text-purple">John Doe</span>   l   May 23, 2022</p>
+                            <h2 class="py-4 w-[370px] text-black text-xl font-bold">8 Figma design systems that you can download for free today.</h2>
+                        </div>
+                        <div class="py-6 pl-8 bg-lightyellow">
+                            <p class="text-darkgrey text-sm">By <span class="text-purple">John Doe</span>   l   May 23, 2022</p>
+                            <h2 class="py-4 w-[370px] text-black text-xl font-bold">8 Figma design systems that you can download for free today.</h2>
+                        </div>
+                        <div class="py-6 pl-8">
+                            <p class="text-darkgrey text-sm">By <span class="text-purple">John Doe</span>   l   May 23, 2022</p>
+                            <h2 class="py-4 w-[370px] text-black text-xl font-bold">8 Figma design systems that you can download for free today.</h2>
+                        </div>
+                        <div class="py-6 pl-8 bg-lightyellow">
+                            <p class="text-darkgrey text-sm">By <span class="text-purple">John Doe</span>   l   May 23, 2022</p>
+                            <h2 class="py-4 w-[370px] text-black text-xl font-bold">8 Figma design systems that you can download for free today.</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="bg-[url('/img/aboutphoto.png')] h-[450px] justify-end">
-                <div class="bg-yellow flex flex-row gap-16  px-12 py-8">
-                    <div>
-                        <h2 class="font-bold text-5xl leading-[64px] tracking-tight text-black">12+</h2>
-                        <p class="font-normal text-base leading-4 text-black">Blogs Published</p>
+            <div class="flex flex-row bg-lavender justify-center mt-[70px] md:flex-col px-6 gap-8">
+                <div class="py-24 md:py-3 basis-1/2">
+                    <p class="text-black text-base uppercase leading-3 font-semibold">ABOUT US</p>
+                    <h1 class="pt-6 text-black text-2xl font-semibold">We are a community of content writers who share their learnings</h1>
+                    <p class="pt-4 mb-4 text-mdgrey text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="blogpost.html" class="pt-4 text-purple font-bold text-lg">Read More ></a>
+                </div>
+                <div class="pt-24 md:py-3 basis-1/2">
+                    <p class="text-black text-base uppercase leading-3 font-semibold">our mission</p>
+                    <h1 class="pt-8 text-black font-bold text-2xl">Creating valuable content for creatives all around the world</h1>
+                    <p class="pt-4 text-mdgrey text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
+            <div class="py-28 mx-auto md:py-10">
+                <h1 class="text-black fon-bold text-4xl text-center">Choose A Catagory</h1>
+                <div class="flex flex-row gap-4 pt-12 justify-center md:flex-wrap">
+                    <div class="border-[1px] border-lightgrey w-[260px] h-[230px]">
+                        <div class="ml-8 my-6">
+                            <svg class="h-20 w-20 text-yellow"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <h2 class="pl-8 text-black font-bold text-3xl lg:text-xl">Business</h2>
+                        <p class="p-6 lg:text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
-                    <div>
-                        <h2 class="font-bold text-5xl leading-[64px] tracking-tight text-black">18K+</h2>
-                        <p class="font-normal text-base leading-4 text-black">Views on Finsweet</p>
+                    <div class="border-[1px] border-lightgrey w-[260px] h-[230px]">
+                        <div class="ml-8 my-6">
+                            <svg class="h-20 w-20 text-yellow"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>
+                                <path d="M15 12h5a2 2 0 0 1 0 4h-15l-3 -6h3l2 2h3l-2 -7h3z" transform="rotate(-15 12 12) translate(0 -1)" />  <line x1="3" y1="21" x2="21" y2="21" />
+                            </svg>
+                        </div>
+                        <h2 class="pl-8 text-black font-bold text-3xl lg:text-xl">Startup</h2>
+                        <p class="p-6 lg:text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
-                    <div>
-                        <h2 class="font-bold text-5xl leading-[64px] tracking-tight text-black">30K+</h2>
-                        <p class="font-normal text-base leading-4 text-black">Total active Users</p>
+                    <div class="border-[1px] border-lightgrey w-[260px] h-[230px]">
+                        <div class="ml-8 my-6">
+                            <svg class="h-20 w-20 text-yellow"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h2 class="pl-8 text-black font-bold text-3xl lg:text-xl">Economy</h2>
+                        <p class="p-6 lg:text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                    <div class="border-[1px] border-lightgrey w-[260px] h-[230px]">
+                        <div class="ml-8 my-6">
+                            <svg class="h-20 w-20 text-yellow"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="3" y1="10" x2="3" y2="16" />  <line x1="21" y1="10" x2="21" y2="16" />  <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />  <line x1="8" y1="3" x2="9" y2="5" />  <line x1="16" y1="3" x2="15" y2="5" />  <line x1="9" y1="18" x2="9" y2="21" />  <line x1="15" y1="18" x2="15" y2="21" />
+                            </svg>
+                        </div>
+                        <h2 class="pl-8 text-black font-bold text-3xl lg:text-xl">Technology</h2>
+                        <p class="p-6 lg:text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-lavender flex flex-row gap-4 px-5 py-16 md:flex-col">
-                <div class="pt-16 basis-1/2">
-                    <p class="font-semibold text-base leading-5 tracking-widest text-black uppercase">Our mision</p>
-                    <h1 class="pt-6 font-bold text-3xl leading-10 tracking-tight text-black">Creating valuable content for creatives all around the world</h1>
-                    <p class="pt-4 font-normal text-base leading-7 text-mdgrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
-                </div>
-                <div class="pt-16 basis-1/2">
-                    <p class="font-semibold text-base leading-5 tracking-widest text-black uppercase">Our Vision</p>
-                    <h1 class="pt-6 font-bold text-3xl leading-10 tracking-tight text-black">A platform that empowers individuals to improve</h1>
-                    <p class="pt-4 font-normal text-base leading-7 text-mdgrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center pt-10 gap-5 md:flex-col">
-                <div class="w-[500px] md:w-full">
-                    <h1 class="font-bold text-4xl leading-[48px] tracking-tight text-blac lg:text-2xl">Our team of creatives</h1>
-                    <h3 class="pt-4 font-bold text-2xl leading-8 text-black lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
-                    <p class="pt-4 font-normal text-base leading-7 text-black lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
-                </div>
-                <div class="w-[580px] grid place-items-end md:w-full">
-                    <img src="./img/ground.png" alt="">
-                </div>
-            </div>
-            <div class="flex flex-row justify-between items-center pt-10 gap-5 md:flex-col">
-                <div class="w-[580px] md:w-full">
-                    <img src="./img/three-persons.png" alt="">
-                </div>
-                <div class="w-[500px] md:w-full">
-                    <h1 class="font-bold text-4xl leading-[48px] tracking-tight text-black lg:text-2xl">Why we started this Blog</h1>
-                    <h3 class="pt-4 font-bold text-2xl leading-8 text-black lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
-                    <p class="pt-4 font-normal text-base leading-7 text-black lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+            <div class="container">
+                <div class="py-28 h-[705px] bg-[url('/img/close.png')] grid justify-items-end md:justify-center">
+                    <div class=" bg-light w-[706px] md:w-full">
+                        <p class="text-[#232536] text-base font-semibold leading-3 uppercase pl-20 pt-20">Why we started </p>
+                        <h1 class="pl-20 pt-6 text-black font-bold text-5xl md:text-2xl">It started out as a simple idea and evolved into our passion</h1>
+                        <p class="pl-20 pt-4 mb-12 text-mdgrey text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                        <a href="" class="text-black text-lg font-bold px-12 py-4 bg-yellow ml-20">Discover our story ></a>
+                    </div>
                 </div>
             </div>
 
@@ -152,7 +203,6 @@
 
                 </div>
             </div>
-
         </div>
     </main>
 
@@ -191,5 +241,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
